@@ -11,7 +11,7 @@
 <!-- CSS
 ================================================== -->
 <link rel="stylesheet" href="css/style.css">
-<link rel="stylesheet" href="css/colors/blue.css">
+<link rel="stylesheet" href="css/colors/green.css">
 
 </head>
 <body class="gray">
@@ -39,6 +39,12 @@
 				<nav id="navigation">
 					<ul id="responsive">
 
+						
+						<li><a href="index-2.html">Home</a></li>
+						<li><a href="freelancers-list-layout-2.html" class="current">Find Tour Agents</a></li>
+						<li><a href="jobs-list-layout-2.html">Browse Posts</a></li>
+						<li><a href="#">The Company</a></li>
+<!-- 
 						<li><a href="#">Home</a>
 							<ul class="dropdown-nav">
 								<li><a href="index.html">Home 1</a></li>
@@ -138,7 +144,7 @@
 								<li><a href="pages-404.html">404 Page</a></li>
 								<li><a href="pages-contact.html">Contact</a></li>
 							</ul>
-						</li>
+						</li> -->
 
 					</ul>
 				</nav>
@@ -368,7 +374,14 @@
 					<h3>Location</h3>
 					<div class="input-with-icon">
 						<div id="autocomplete-container">
-							<input id="autocomplete-input" type="text" placeholder="Location">
+							<input id="autocomplete-input" type="text" placeholder="Location" list="cities">
+							<datalist id="cities">
+								<option value="Colombo">
+								<option value="Galle">
+								<option value="Sigirya">
+								<option value="kandy">
+								<option value="Jaffna">
+							</datalist>
 						</div>
 						<i class="icon-material-outline-location-on"></i>
 					</div>
@@ -378,16 +391,9 @@
 				<div class="sidebar-widget">
 					<h3>Category</h3>
 					<select class="selectpicker default" multiple data-selected-text-format="count" data-size="7" title="All Categories" >
-						<option>Admin Support</option>
-						<option>Customer Service</option>
-						<option>Data Analytics</option>
-						<option>Design & Creative</option>
-						<option>Legal</option>
-						<option>Software Developing</option>
-						<option>IT & Networking</option>
-						<option>Writing</option>
-						<option>Translation</option>
-						<option>Sales & Marketing</option>
+						<option>Beach</option>
+						<option>Mountain</option>
+						<option>City</option>
 					</select>
 				</div>
 
@@ -413,52 +419,7 @@
 					<input class="range-slider" type="text" value="" data-slider-currency="$" data-slider-min="10" data-slider-max="250" data-slider-step="5" data-slider-value="[10,250]"/>
 				</div>
 
-				<!-- Tags -->
-				<div class="sidebar-widget">
-					<h3>Skills</h3>
-
-					<div class="tags-container">
-						<div class="tag">
-							<input type="checkbox" id="tag1"/>
-							<label for="tag1">front-end dev</label>
-						</div>
-						<div class="tag">
-							<input type="checkbox" id="tag2"/>
-							<label for="tag2">angular</label>
-						</div>
-						<div class="tag">
-							<input type="checkbox" id="tag3"/>
-							<label for="tag3">react</label>
-						</div>
-						<div class="tag">
-							<input type="checkbox" id="tag4"/>
-							<label for="tag4">vue js</label>
-						</div>
-						<div class="tag">
-							<input type="checkbox" id="tag5"/>
-							<label for="tag5">web apps</label>
-						</div>
-						<div class="tag">
-							<input type="checkbox" id="tag6"/>
-							<label for="tag6">design</label>
-						</div>
-						<div class="tag">
-							<input type="checkbox" id="tag7"/>
-							<label for="tag7">wordpress</label>
-						</div>
-					</div>
-					<div class="clearfix"></div>
-
-					<!-- More Skills -->
-					<div class="keywords-container margin-top-20">
-						<div class="keyword-input-container">
-							<input type="text" class="keyword-input" placeholder="add more skills"/>
-							<button class="keyword-input-button ripple-effect"><i class="icon-material-outline-add"></i></button>
-						</div>
-						<div class="keywords-list"><!-- keywords go here --></div>
-						<div class="clearfix"></div>
-					</div>
-				</div>
+				
 				<div class="clearfix"></div>
 
 			</div>
@@ -469,7 +430,7 @@
 
 			<div class="notify-box margin-top-15">
 				<div class="switch-container">
-					<label class="switch"><input type="checkbox"><span class="switch-button"></span><span class="switch-text">Turn on email alerts for this search</span></label>
+					<label class="switch"><input type="checkbox"><span class="switch-button"></span><span class="switch-text">Scroll Down to view more results</span></label>
 				</div>
 
 				<div class="sort-by">
@@ -504,12 +465,12 @@
 
 							<!-- Name -->
 							<div class="freelancer-name">
-								<h4><a href="#">Tom Smith <img class="flag" src="images/flags/gb.svg" alt="" title="United Kingdom" data-tippy-placement="top"></a></h4>
-								<span>UI/UX Designer</span>
+								<h4><a href="#">Tom Smith <img class="flag" src="images/flags/lk.svg" alt="" title="United Kingdom" data-tippy-placement="top"></a></h4>
+								<span>Tour Guide</span>
 								<!-- Rating -->
-								<div class="freelancer-rating">
+								<!-- <div class="freelancer-rating">
 									<div class="star-rating" data-rating="4.9"></div>
-								</div>
+								</div> -->
 							</div>
 						</div>
 					</div>
@@ -518,7 +479,7 @@
 					<div class="freelancer-details">
 						<div class="freelancer-details-list">
 							<ul>
-								<li>Location <strong><i class="icon-material-outline-location-on"></i> London</strong></li>
+								<li>Location <strong><i class="icon-material-outline-location-on"></i> Colombo</strong></li>
 								<li>Rate <strong>$60 / hr</strong></li>
 								<li>Job Success <strong>95%</strong></li>
 							</ul>
@@ -546,12 +507,12 @@
 
 							<!-- Name -->
 							<div class="freelancer-name">
-								<h4><a href="#">David Peterson <img class="flag" src="images/flags/de.svg" alt="" title="Germany" data-tippy-placement="top"></a></h4>
-								<span>iOS Expert + Node Dev</span>
+								<h4><a href="#">David Peterson <img class="flag" src="images/flags/lk.svg" alt="" title="Sri Lanka" data-tippy-placement="top"></a></h4>
+								<span>Tour Guide</span>
 								<!-- Rating -->
-								<div class="freelancer-rating">
+								<!-- <div class="freelancer-rating">
 									<div class="star-rating" data-rating="4.2"></div>
-								</div>
+								</div> -->
 							</div>
 						</div>
 					</div>
@@ -560,9 +521,9 @@
 					<div class="freelancer-details">
 						<div class="freelancer-details-list">
 							<ul>
-								<li>Location <strong><i class="icon-material-outline-location-on"></i> Berlin</strong></li>
+								<li>Location <strong><i class="icon-material-outline-location-on"></i> Kandy</strong></li>
 								<li>Rate <strong>$40 / hr</strong></li>
-								<li>Job Success <strong>88%</strong></li>
+								<!-- <li>Job Success <strong>88%</strong></li> -->
 							</ul>
 						</div>
 						<a href="single-freelancer-profile.html" class="button button-sliding-icon ripple-effect">View Profile <i class="icon-material-outline-arrow-right-alt"></i></a>
@@ -586,10 +547,10 @@
 
 							<!-- Name -->
 							<div class="freelancer-name">
-								<h4><a href="#">Marcin Kowalski <img class="flag" src="images/flags/pl.svg" alt="" title="Poland" data-tippy-placement="top"></a></h4>
-								<span>Front-End Developer</span>
+								<h4><a href="#">Marcin Kowalski <img class="flag" src="images/flags/lk.svg" alt="" title="Sri Lanka" data-tippy-placement="top"></a></h4>
+								<span>Tour Guide</span>
 								<!-- Rating -->
-								<span class="company-not-rated margin-bottom-5">Minimum of 3 votes required</span>
+								<!-- <span class="company-not-rated margin-bottom-5">Minimum of 3 votes required</span> -->
 							</div>
 						</div>
 					</div>
@@ -598,7 +559,7 @@
 					<div class="freelancer-details">
 						<div class="freelancer-details-list">
 							<ul>
-								<li>Location <strong><i class="icon-material-outline-location-on"></i> Warsaw</strong></li>
+								<li>Location <strong><i class="icon-material-outline-location-on"></i> Galle</strong></li>
 								<li>Rate <strong>$50 / hr</strong></li>
 								<li>Job Success <strong>100%</strong></li>
 							</ul>
@@ -625,12 +586,12 @@
 
 							<!-- Name -->
 							<div class="freelancer-name">
-								<h4><a href="#">Sindy Forest <img class="flag" src="images/flags/au.svg" alt="" title="Australia" data-tippy-placement="top"></a></h4>
-								<span>Magento Certified Developer</span>
+								<h4><a href="#">Sindy Forest <img class="flag" src="images/flags/lk.svg" alt="" title="Sri Lanka" data-tippy-placement="top"></a></h4>
+								<span>Tour Guide</span>
 								<!-- Rating -->
-								<div class="freelancer-rating">
+								<!-- <div class="freelancer-rating">
 									<div class="star-rating" data-rating="5.0"></div>
-								</div>
+								</div> -->
 							</div>
 						</div>
 					</div>
@@ -639,7 +600,7 @@
 					<div class="freelancer-details">
 						<div class="freelancer-details-list">
 							<ul>
-								<li>Location <strong><i class="icon-material-outline-location-on"></i> Brisbane</strong></li>
+								<li>Location <strong><i class="icon-material-outline-location-on"></i> Sigirya</strong></li>
 								<li>Rate <strong>$70 / hr</strong></li>
 								<li>Job Success <strong>100%</strong></li>
 							</ul>
