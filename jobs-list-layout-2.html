@@ -131,25 +131,6 @@
 		<div class="col-xl-3 col-lg-4">
 			<div class="sidebar-container">
 				
-				<!-- Location -->
-				<div class="sidebar-widget">
-					<h3>Location</h3>
-					<div class="input-with-icon">
-						<div id="autocomplete-container">
-							<input id="autocomplete-input" type="text" placeholder="Location" list="cities">
-							<datalist id="cities">
-								<option value="Colombo">
-								<option value="Galle">
-								<option value="Sigirya">
-								<option value="kandy">
-								<option value="Jaffna">
-							</datalist>
-						</div>
-						<i class="icon-material-outline-location-on"></i>
-					</div>
-				</div>
-
-				
 				<!-- Keywords -->
 				<div class="sidebar-widget">
 					<h3>Keywords</h3>
@@ -162,20 +143,74 @@
 						<div class="clearfix"></div>
 					</div>
 				</div>
-				
+
+				<!-- Location -->
+				<div class="sidebar-widget">
+					<h3>Location</h3>
+					<div class="input-with-icon">
+						<div id="autocomplete-container">
+							<select class="selectpicker" data-live-search="true" multiple>
+								<option value="Sri Lanka" selected>Sri Lanka</option>
+								<option value="Colombo">Colombo</option>
+								<option value="Galle">Galle</option>
+								<option value="Dambulla">Dambulla</option>
+								<option value="Kandy">Kandy</option>
+								<option value="Jaffna">Jaffna</option>
+							</select>
+						</div>
+						<i class="icon-material-outline-location-on"></i>
+					</div>
+				</div>
+
 				<!-- Category -->
 				<div class="sidebar-widget">
 					<h3>Category</h3>
-					<select class="selectpicker default" multiple data-selected-text-format="count" data-size="7" title="All Categories" >
-						<option>Beach</option>
-						<option>Mountain</option>
-						<option>City</option>
-					</select>
+					<div class="input-with-icon">
+						<div id="autocomplete-container">
+							<select class="selectpicker" data-live-search="true" multiple>
+								<option value="Stays">Stays</option>
+								<option value="Car Rentals">Car Rentals</option>
+								<option value="Attractions">Attractions</option>
+								<option value="Full Packages">Full Packages</option>
+								<option value="Others">Others</option>
+							</select>
+						</div>
+						<i class="icon-material-outline-location-on"></i>
+					</div>
 				</div>
 
-				<!-- Salary -->
+				<!-- Date Range -->
 				<div class="sidebar-widget">
-					<h3>Amount</h3>
+					<h3>Date Range</h3>
+					<label for="startdate">Start Date</label>
+					<input type="datetime-local" name="startdate" id="startdate" />
+					<br>
+					<label for="enddate">End Date</label>
+					<input type="datetime-local" name="enddate" id="enddate" />
+				</div>
+
+				<!-- Vehicle Type -->
+				<div class="sidebar-widget">
+					<h3>Vehicle Type</h3>
+					<div class="checkbox">
+						<input type="checkbox" id="budget" checked>
+						<label for="budget"><span class="checkbox-icon"></span> Budget</label>
+					</div>
+					<br>
+					<div class="checkbox">
+						<input type="checkbox" id="compact">
+						<label for="compact"><span class="checkbox-icon"></span> Compact</label>
+					</div>
+					<br>
+					<div class="checkbox">
+						<input type="checkbox" id="van">
+						<label for="van"><span class="checkbox-icon"></span> Van</label>
+					</div>
+				</div>
+
+				<!-- Budget -->
+				<div class="sidebar-widget">
+					<h3>Budget</h3>
 					<div class="margin-top-55"></div>
 
 					<!-- Range Slider -->
@@ -231,8 +266,8 @@
 					<div class="job-listing-footer">
 						<ul>
 							<li><i class="icon-material-outline-location-on"></i> Galle</li>
-							<li><i class="icon-material-outline-business-center"></i> 23-11-2021 to 31-12-2021</li>
-							<li><i class="icon-material-outline-account-balance-wallet"></i> Rs35000-Rs38000</li>
+							<li><i class="icon-material-outline-business-center"></i> Stays</li>
+							<li><i class="icon-material-outline-access-time"></i> 23-11-2021 to 31-12-2021</li>
 							<li><i class="icon-material-outline-access-time"></i> 2 days ago</li>
 						</ul>
 					</div>
@@ -265,8 +300,8 @@
 					<div class="job-listing-footer">
 						<ul>
 							<li><i class="icon-material-outline-location-on"></i> Colombo, Galle and more</li>
-							<li><i class="icon-material-outline-business-center"></i> 23-11-2021 to 31-12-2021</li>
-							<li><i class="icon-material-outline-account-balance-wallet"></i> Rs35000-Rs38000</li>
+							<li><i class="icon-material-outline-business-center"></i> Stays</li>
+							<li><i class="icon-material-outline-access-time"></i> 23-11-2021 to 31-12-2021</li>
 							<li><i class="icon-material-outline-access-time"></i> 2 days ago</li>
 						</ul>
 					</div>
